@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background-image: url(https://cdn.glitch.me/6a81828b-15c0-4da2-8f63-0b44d4ed47e8%2Fvector.jpg?v=1639042920008);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    background-color: rgb(10, 10, 46);
+}
+/*home page*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+.navbar .container .logo a{
+    font-size: 35px ;
+    font-weight: bold;
+    color: rgb(219, 219, 219);
+    margin-left: 50px;
+}
+.logo{
+  margin:1.5em 0
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 1em 0.5em ;  
+}
+.navbar .menu li a{
+    font-size: 0.5em;
+    font-weight: 500;
+    color:rgb(219, 219, 219);
+    font-size: 1.5em;
+    padding: 0 0.5em
+}
+#profileimg {
+    display:block;
+    margin: 1em 1em;
+    border-radius: 10em;      
+  }
+main{
+    display: flex;
+    
+}
+#par1{
+    margin: 250px 10px;
+    color: white;
+    font-size: 1.5em;
+}
+.button  {
+    display: inline-block;
+    border:2px rgb(148, 144, 144) ridge;
+    border-radius: 1.5em;
+    margin: 1em 0.5em;
+    padding: 0.5em;
+  }
+  .button a{
+    color: white;
+  }
+  .button:hover{
+    background-color: black;
+  }
+  footer .foot1{
+      display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  .foot1 .part1 p {
+    float: right;
+      width: 300px;
+    margin: 10px 10px
+  }
+  .foot2 {
+    display: flex;
+    justify-content: space-between;
+      color: white;
+      margin: 10px 100px
+  }
+
+/*about me*/
+.container-about{
+    display: flex;
+  flex-direction: column;
+    margin: 0 10px;
+}
+.container-about #aboutme p{
+  color: white;
+  margin: 50px;
+  
+}
+#aboutme{
+  display: flex;
+  font-size: 1.25em
+}
+#about_profileimg{
+  display: block;
+  margin:3em 1em;
+  border-radius: 3em;
+}
+
+#aboutme1{
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#aboutme1 p{
+    color: white;
+  
+  margin: 1.5em;
+}
+
+/*contact*/
+
+.contact .container{
+  display: flex;
+  margin: 1em ;
+  color:white;
+}
+.contact .container .main-contact{
+  margin: 0;
+
+}
+.contact .container .contact-form{
+  margin: 1em 3em;
+  color:white;
+}
+.contact .container .contact-form input{
+  display: block;
+  margin: 1em;
+  padding: 0.3em;
+}
+/*contact*/
+
+
+/*project*/
+.projects{
+  display: flex;
+ flex-wrap: wrap;
+  margin: 1em;
+  color: white;
+}
+.projects li{
+  display: block;
+  width:15em;
+  border:solid;
+  border-radius: 2em;
+  margin: 1em;
+  padding: 1em;  
+  box-shadow: 0.3em 0.3em 0 0 lightgray;
+}
+.projects li img{
+    width: 100%;
+  border-radius: 1em;
+}
+.projects li .button{
+  color: black;
+  position: relative;
+  left: 30%;
+  top: 16%;
+  z-index: 10;
+}
+
