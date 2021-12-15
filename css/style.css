@@ -6,13 +6,18 @@
 }
 body{
     display: grid;
-    grid-template-rows: auto auto auto;
-    background-image: url(https://cdn.glitch.me/6a81828b-15c0-4da2-8f63-0b44d4ed47e8%2Fvector.jpg?v=1639042920008);
-    background-repeat: no-repeat;
-    background-size: cover;
+    grid-template-rows: [header]0.1fr [main]2fr [footer]0.1fr;
+    background-color: rgb(0,74,111);
+    //background-image: url(https://cdn.glitch.me/6a81828b-15c0-4da2-8f63-0b44d4ed47e8%2Fvector.jpg?v=1639042920008);
+   // background-repeat: no-repeat;
+   // background-size: cover;
 }
 .navbar{
     background-color: rgb(10, 10, 46);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 /*home page*/
 .container{
@@ -21,15 +26,14 @@ body{
     justify-content: space-between;
     margin: 0 50px;
 }
+
 .navbar .container .logo a{
-    font-size: 35px ;
+    font-size: 1em; ;
     font-weight: bold;
     color: rgb(219, 219, 219);
-    margin-left: 50px;
+    margin: 1em 0.5em ;
 }
-.logo{
-  margin:1.5em 0
-}
+
 .navbar .menu li {
     list-style: none;
     display: inline-block;
@@ -38,17 +42,28 @@ body{
 .navbar .menu li a{
     font-size: 0.5em;
     font-weight: 500;
-    color:rgb(219, 219, 219);
+    color:white;
     font-size: 1.5em;
-    padding: 0 0.5em
+    padding: 0 1em;
+    border-radius: 1em;
+}
+.navbar .menu li a:hover {
+  position: relative;
+  opacity: 0.6;
+  top: -0.2em;
+  left: 0.1em;
 }
 #profileimg {
     display:block;
-    margin: 1em 1em;
-    border-radius: 10em;      
+    margin: 1em 2em;
+    border-radius: 10em;
+    border-style: solid; 
+    border-width: 1em;;
+    border-color:#05e35e;     
   }
-main{
-    display: flex;
+section{
+   // display: flex;
+    margin: 0 2em;
     
 }
 #par1{
@@ -60,14 +75,16 @@ main{
     display: inline-block;
     border:2px rgb(148, 144, 144) ridge;
     border-radius: 1.5em;
+    background-color: rgb(10, 10, 46);
     margin: 1em 0.5em;
     padding: 0.5em;
   }
   .button a{
     color: white;
+
   }
   .button:hover{
-    background-color: black;
+    background-color: #02450f;
   }
   footer .foot1{
       display: flex;
@@ -83,14 +100,16 @@ main{
     display: flex;
     justify-content: space-between;
       color: white;
-      margin: 10px 100px
+      margin: 10px 100px;
+        height: 1em;
+        
   }
 
 /*about me*/
 .container-about{
     display: flex;
   flex-direction: column;
-    margin: 0 10px;
+    margin: 5em 0;
 }
 .container-about #aboutme p{
   color: white;
@@ -114,31 +133,44 @@ main{
   flex-wrap: wrap;
 }
 #aboutme1 p{
-    color: white;
-  
+    color: white; 
   margin: 1.5em;
 }
 
 /*contact*/
 
-.contact .container{
+.contact .contact-container{
   display: flex;
   margin: 1em ;
   color:white;
 }
-.contact .container .main-contact{
-  margin: 0;
+.contact .contact-container .main-contact{
+ display: flex;
+ flex-direction: column;
 
 }
-.contact .container .contact-form{
+.contact .contact-container .main-contact p{
+    margin-top: 4em;
+
+}
+
+.contact .contact-container .contact-form{
   margin: 1em 3em;
   color:white;
 }
-.contact .container .contact-form input{
-  display: block;
+.contact .contact-container .contact-form input, textarea{
+  display: inline-block;
+  width:100%;
   margin: 1em;
   padding: 0.3em;
+  color:white;
+  border-radius: 3em;
 }
+.contact .contact-container .main-contact .contact_info li{ 
+    margin: 1em 1em;
+}
+
+
 /*contact*/
 
 
@@ -146,7 +178,7 @@ main{
 .projects{
   display: flex;
  flex-wrap: wrap;
-  margin: 1em;
+  margin: 6em;
   color: white;
 }
 .projects li{
@@ -156,17 +188,121 @@ main{
   border-radius: 2em;
   margin: 1em;
   padding: 1em;  
+  background-color:rgb(10,54,105);
   box-shadow: 0.3em 0.3em 0 0 lightgray;
+}
+.projects li:hover{
+  position:relative;
+  top:-0.5em;
+  right: 0.5em;
 }
 .projects li img{
     width: 100%;
   border-radius: 1em;
 }
 .projects li .button{
-  color: black;
+  background-color: rgb(10, 10, 46);
+  padding:0.2em 1.5em;
   position: relative;
   left: 30%;
   top: 16%;
-  z-index: 10;
+
+}
+/*project*/
+/*myskills*/
+.skills-container{
+  margin:8em 2em;
+  color: white;
+  height: auto;
+}
+.skills-container .myskills{
+  display:flex;
+  flex-wrap: wrap;
+  color: white;
+  
+  
+}
+.progress {
+  width: 100%;
+  max-width: 100%;
+  border: 0.1em solid rgb(10, 10, 46);
+  background-color:white;
+  border-radius: 0.5em;
+  height: 30px;
+}
+.progress .progressbar {
+  height: 100%;
+  width: 95%;
+  background-color: rgb(10, 10, 46);
+  animation: fill-bar 3s ;
+}
+@keyframes fill-bar {
+  from {width: 0%;}
+  to {width: 95%;}
+}
+.skill{
+  display: flex;
+  flex-wrap: wrap;
+  margin:1em 1em;
+  width: 30%;
+  justify-content: space-between;
 }
 
+/*certificate*/
+.certificate{
+  margin: 1em;
+  padding: 1em;
+  color: white;
+  border: solid #0A0A2E;
+  border-radius:1em;
+}
+.certificate .button{
+  position: relative;
+  margin-bottom: 0;
+   left: 70%;
+}
+.certificate:hover{
+  position: relative;
+  background-color: #031b42;
+  top: 0.5em;
+  left: 0.5em;
+  box-shadow: 0 0 0 0.2em rgb(44,161,107);
+}
+/*certificate*/
+
+/*resume*/
+.resume{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 5em 3em; 
+}
+table {
+  font-family: arial, sans-serif;
+  //border-collapse: collapse;
+  border:solid;
+  width: 80%;
+  //border-radius: 1em;
+}
+thead{
+  background-color: rgb(10, 10, 46);
+}
+
+td, th {
+  border: 0.1em solid #dddddd;
+  text-align: left;
+  padding: 1em;;
+}
+.resume p{
+  margin: 5em 0 0 1em;;
+}
+.resume h2{
+  margin: 0.5em;
+}
+.resume .button{
+  width: 10em;
+  text-align: center;
+}
+.resume .education, .experience{
+ margin: 0.5em;
+}
