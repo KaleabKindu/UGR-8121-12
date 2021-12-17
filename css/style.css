@@ -6,15 +6,12 @@
 }
 body{
     display: grid;
-    grid-template-rows: [header]0.1fr [main]2fr [footer]0.1fr;
+    grid-template-rows: [header]10[px] [main]1fr [footer]10px;
     background-color: rgb(0,74,111);
-    //background-image: url(https://cdn.glitch.me/6a81828b-15c0-4da2-8f63-0b44d4ed47e8%2Fvector.jpg?v=1639042920008);
-   // background-repeat: no-repeat;
-   // background-size: cover;
 }
 .navbar{
     background-color: rgb(10, 10, 46);
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 1;
@@ -61,11 +58,6 @@ body{
     border-width: 1em;;
     border-color:#05e35e;     
   }
-section{
-   // display: flex;
-    margin: 0 2em;
-    
-}
 #par1{
     margin: 250px 10px;
     color: white;
@@ -110,6 +102,12 @@ section{
     display: flex;
   flex-direction: column;
     margin: 5em 0;
+    color: white
+}
+h1{
+ margin: 0em 25%;
+ font-size: xx-large;
+ color: white;
 }
 .container-about #aboutme p{
   color: white;
@@ -118,6 +116,7 @@ section{
 }
 #aboutme{
   display: flex;
+  justify-content: center;
   font-size: 1.25em
 }
 #about_profileimg{
@@ -136,11 +135,36 @@ section{
     color: white; 
   margin: 1.5em;
 }
+.contact-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin:1em;
+  color:white;
+}
+.main-contact *{
+  margin: 1em;
+}
+form {
+  display: grid;
+  grid-template-columns: 10em 50%;
+  grid-gap: 1em;
+  background-color: rgb(10, 10, 46);
+  padding: 2em;
+  border: solid rgb(148, 144, 144);
+  
+}
+input, textarea{
+  margin: 0.5em;
+  padding:0.5em;
+  border-radius: 0.5em;
+}
 
-/*contact*/
+
+/*contact
 
 .contact .contact-container{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 1em ;
   color:white;
 }
@@ -160,11 +184,11 @@ section{
 }
 .contact .contact-container .contact-form input, textarea{
   display: inline-block;
-  width:100%;
+  width:80%;
   margin: 1em;
   padding: 0.3em;
   color:white;
-  border-radius: 3em;
+  border-radius: 2em;
 }
 .contact .contact-container .main-contact .contact_info li{ 
     margin: 1em 1em;
@@ -219,9 +243,11 @@ section{
   display:flex;
   flex-wrap: wrap;
   color: white;
-  
-  
 }
+.aboutskills{
+  width:80%;
+}
+
 .progress {
   width: 100%;
   max-width: 100%;
@@ -279,10 +305,9 @@ section{
 }
 table {
   font-family: arial, sans-serif;
-  //border-collapse: collapse;
   border:solid;
   width: 80%;
-  //border-radius: 1em;
+
 }
 thead{
   background-color: rgb(10, 10, 46);
@@ -294,7 +319,8 @@ td, th {
   padding: 1em;;
 }
 .resume p{
-  margin: 5em 0 0 1em;;
+  margin: 5em 0 0 1em;
+  width:80%
 }
 .resume h2{
   margin: 0.5em;
