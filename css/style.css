@@ -253,12 +253,13 @@ input, textarea{
 .projects li{
   display: block;
   width:15em;
-  border:solid;
-  border-radius: 2em;
+  //border:solid;
+  border-radius: 1em;
   margin: 1em;
   padding: 1em;  
   background-color:rgb(10,54,105);
-  box-shadow: 0.3em 0.3em 0 0 lightgray;
+  box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
+  //box-shadow: 0.3em 0.3em 0 0 lightgray;
 }
 .projects li:hover{
   position:relative;
