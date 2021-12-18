@@ -360,7 +360,7 @@ input, textarea{
   display: flex;
   flex-direction: column;
   color: white;
-  margin: 5em 3em; 
+  margin: 0em 1em; 
 }
 table {
   font-family: arial, sans-serif;
@@ -378,7 +378,7 @@ td, th {
   padding: 1em;;
 }
 .resume p{
-  margin: 5em 0 0 1em;
+  margin:1em;
   width:80%
 }
 .resume h2{
