@@ -3,7 +3,7 @@
 .about-container{
     display: flex;
     flex-direction: column;
-    margin: 1rem 1rem;
+    margin: 3rem 3rem;
     color: white
 }
 #aboutme p{
