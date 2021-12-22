@@ -1,40 +1,42 @@
 .contact-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: [contact]1fr [form]1fr;
     grid-gap: 1rem;
     margin:3rem 1rem 3rem;
     color:white;
 
   }
-  .main-contact {
+  .contact-container__main-contact{
+    grid-column: contact;
     padding:2em;
     height:100%;
     border-radius: 1em;
     background-color: rgb(0, 61, 92);
   }
-  .main-contact *{
+  .contact-container__main-contact *{
     margin: 1rem 0rem;
   }
-  .main-contact .email{
+ .contact-container__main-contact--email{
     list-style: none;
     background-image:url(../images/email.svg);
     background-repeat: no-repeat;
     background-position: left center;
     padding:1rem 3rem;
   }
-  .main-contact .phone_number{
+  .contact-container__main-contact--phone_number{
     list-style: none;
     background: url(../images/phone.svg) no-repeat left center;
     padding:1rem 3rem;
   }
-  .main-contact .address{
+  .contact-container__main-contact--address{
     list-style: none;
     background: url(../images/address.svg) no-repeat left center;
     padding:1rem 3rem;
   }
-.page-heading{
-      border: solid 1rem black;
+  .contact-container__contact-form{
+    grid-column: form;
   }
+
   form {
     display: grid;
     grid-template-columns: [lables]7rem [forms]auto;
@@ -74,45 +76,12 @@ input[type=submit]:hover{
         .contact-container{
             display: flex;
             flex-direction: column;
+            grid-gap:0;
         }
-
+        input[type=submit]{
+          width:100%;
+        }
 
  }
   
-  /*contact
-  
-  .contact .contact-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 1em ;
-    color:white;
-  }
-  .contact .contact-container .main-contact{
-   display: flex;
-   flex-direction: column;
-  
-  }
-  .contact .contact-container .main-contact p{
-      margin-top: 4em;
-  
-  }
-  
-  .contact .contact-container .contact-form{
-    margin: 1em 3em;
-    color:white;
-  }
-  .contact .contact-container .contact-form input, textarea{
-    display: inline-block;
-    width:80%;
-    margin: 1em;
-    padding: 0.3em;
-    color:white;
-    border-radius: 2em;
-  }
-  .contact .contact-container .main-contact .contact_info li{ 
-      margin: 1em 1em;
-  }
-  
-  
-  /*contact*/
   

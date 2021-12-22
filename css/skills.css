@@ -1,18 +1,18 @@
-/*myskills*/
+
 .skills-container{
   display: flex;
   flex-direction: column;
     margin:3rem 3rem 3rem ;
     color: white;
   }
-  .skills-container .myskills{
+ .skills-container__myskills{
     display:flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     color: white;
   }
-  .aboutskills{
+  .skills-container__aboutskills{
     width:90%;
     align-self: center;
     padding:1rem;
@@ -20,40 +20,40 @@
     border-radius: 1rem;
   }
   
-  .progress {
+  .skills-container__progress {
     width: 100%;
     border: 0.1rem solid rgb(10, 10, 46);
   }
-  .progress .progressbar {
+  .skills-container__progress--progressbar {
     height: 1.5rem;
     background-color: rgb(10, 10, 46);
     animation: fill-bar 3s ;
   }
-  .html .progress .progressbar {
+  .html  .skills-container__progress--progressbar {
     width: 95%;
   }
-  .css .progress .progressbar {
+  .css  .skills-container__progress--progressbar {
     width: 90%;
   }
-  .javascript .progress .progressbar {
+  .javascript .skills-container__progress--progressbar {
     width: 86%;
   }
-  .react .progress .progressbar {
+  .react  .skills-container__progress--progressbar {
     width: 85%;
   }
-  .node .progress .progressbar {
+  .node  .skills-container__progress--progressbar {
     width: 80%;
   }
-  .django .progress .progressbar {
+  .django  .skills-container__progress--progressbar {
     width: 89%;
   }
-  .python .progress .progressbar {
+  .python  .skills-container__progress--progressbar {
     width: 94%;
   }
-  .java .progress .progressbar {
+  .java  .skills-container__progress--progressbar {
     width: 91%;
   }
-  .cplusplus .progress .progressbar {
+  .cplusplus .skills-container__progress--progressbar {
     width: 84%;
   }
 
@@ -61,7 +61,7 @@
     from {width: 0%;}
     to {width: calc(95% * 15rem);}
   }
-  .skill{
+  .skills-container__skill{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -73,17 +73,17 @@
     border-radius: 1rem;
     
   }
-  .skill_n{
+  .skills-container__skill_n{
     display: flex;
     justify-content: space-between;
   }
   @media only screen and (max-width : 460px) {
-    .skills-container .myskills{
+    .skills-container__myskills{
         flex-direction: column;
         align-items: center;
         
     }
-    .skill{
+    .skills-container__skill{
       margin:1rem;
       width: 100%;
     }

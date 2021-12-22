@@ -1,4 +1,3 @@
-/*certificate*/
 
 .certificate-container {
     display: flex;
@@ -7,7 +6,7 @@
     margin: 2rem 2rem;
 }
 
-.certificate {
+.certificate-container__certificate {
     display: flex;
     flex-direction: column;
     margin: 1em;
@@ -18,28 +17,32 @@
     border-radius: 1em;
 }
 
-.certificate * {
+.certificate-container__certificate * {
     margin: 0.5rem;
 }
 
-.certificate .button {
+.certificate-container__certificate .button {
     display: inline;
     width: 10em;
     text-align: center;
 }
 
-.certificate .buttons {
+.certificate-container__certificate--buttons {
     display: inline-flex;
     justify-content: end;
     margin-bottom: 0em;
 }
 
-.certificate:hover {
+.certificate-container__certificate:hover {
     position: relative;
     top: 0.5em;
     left: 0.5em;
     box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
 }
+@media only screen and (max-width : 460px) {
+    .certificate-container__certificate {
+        width:100%;
+    }
+}
 
 
-/*certificate*/

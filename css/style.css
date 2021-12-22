@@ -5,7 +5,6 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
 h1,
 h2,
 h3 {
@@ -32,7 +31,7 @@ img {
     height: auto;
 }
 
-.navbar .nav-container .current-page a {
+.navbar .nav-container .nav-container__menu--current-page a {
     color: rgb(44, 161, 107);
 }
 
@@ -56,11 +55,11 @@ img {
     margin: 0em 1em;
 }
 
-.navbar .logo {
+.navbar .nav-container__logo {
     margin-left: 2rem;
 }
 
-.navbar .logo a {
+.navbar .nav-container__logo a {
     font-size: 1rem;
     font-family: Courgette;
     font-weight: bold;
@@ -69,12 +68,14 @@ img {
 }
 
 
-/*mobile navbar*/
 
-.hamburger_menu {
+
+.nav-container__hamburger_menu {
     width: 35px;
     height: 30px;
     position: relative;
+    top: 0;
+    right: 0;
     cursor: pointer;
     display: none;
     flex-direction: column;
@@ -100,7 +101,7 @@ img {
     background-color: #031b42;
 }
 
-.mobile_menu {
+.mobile_navbar__mobile_menu {
     display: none;
     flex-direction: column;
     gap: 20px;
@@ -108,22 +109,22 @@ img {
     list-style: none;
 }
 
-.mobile_menu li a {
+.mobile_navbar__mobile_menu li a {
     padding-bottom: 4rem;
     color: white;
 }
 
 
-/* mobile navbar*/
 
-.navbar .menu li {
+
+.navbar .nav-container__menu li {
     list-style: none;
     display: inline-block;
     margin: 0.5rem;
     transition: 0.7s ease;
 }
 
-.navbar .menu li a {
+.navbar .nav-container__menu li a {
     font-size: 0.5rem;
     font-weight: 500;
     color: white;
@@ -131,7 +132,7 @@ img {
     margin: 1rem 1rem;
 }
 
-.navbar .menu li a:hover {
+.navbar .nav-container__menu li a:hover {
     position: relative;
     opacity: 0.6;
     top: 0.2rem;
@@ -139,20 +140,20 @@ img {
 }
 
 @media only screen and (max-width: 460px) {
-    .menu {
+    .nav-container__menu{
         display: none;
         background-image: url(../images/hamburger.svg);
     }
-    .mobile_menu {
+    .mobile_navbar__mobile_menu {
         display: block;
     }
-    #welcome{
+    #home-content__welcome{
         width:100%;
     }
     .home-content {
         flex-direction: column;
     }
-    .footer .part1 {
+    .footer .footer__links {
         display: none;
     }
     .mobile_navbar {
@@ -161,11 +162,11 @@ img {
     .line {
         display: block;
     }
-    .mobile_menu {
+    .mobile_navbar__mobile_menu {
         display: flex;
         align-items: center;
     }
-    .hamburger_menu {
+    .nav-container__hamburger_menu {
         display: flex;
     }
     .change .line_1 {
@@ -180,7 +181,7 @@ img {
 }
 
 
-/*home page*/
+
 
 .home-content {
     display: flex;
@@ -205,12 +206,12 @@ img {
     height: auto;
 }
 
-#welcome {
+#home-content__welcome {
     margin: 5rem 5rem;
     color: white;
 }
 
-#welcome h1 {
+#home-content__welcome h1 {
     font-size: 2.5rem;
 }
 
@@ -240,7 +241,7 @@ footer .foot1 {
     color: white;
 }
 
-.foot1 .part1 p {
+.foot1 .footer__links p {
     float: right;
     width: 300px;
     margin: 10px 10px;
@@ -266,7 +267,7 @@ footer .foot1 {
     padding: 0.5rem;
 }
 
-.part1 {
+.footer__links {
     display: flex;
     align-items: center;
 }
@@ -289,4 +290,3 @@ footer .foot1 {
 }
 
 
-/*project*/

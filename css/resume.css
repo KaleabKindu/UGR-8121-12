@@ -1,4 +1,4 @@
-/*resume*/
+
 .resume{
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
     padding: 1rem;
     font-size: 1rem;
   }
-  .row_even{
+  .resume__education--row_even{
       background-color: rgb(0, 61, 92);
   }
   .resume p{
