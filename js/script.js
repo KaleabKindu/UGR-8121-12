@@ -9,9 +9,7 @@ const mobile_navbar=document.querySelector('.mobile_navbar')
      }
      else if (state.display == "block"){
         mobile_navbar.style.display="none";
- 
      }
-     
  })
 
 
