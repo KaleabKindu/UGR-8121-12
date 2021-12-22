@@ -1,0 +1,92 @@
+/*myskills*/
+.skills-container{
+  display: flex;
+  flex-direction: column;
+    margin:0em 3rem 3rem ;
+    color: white;
+  }
+  .skills-container .myskills{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+  }
+  .aboutskills{
+    width:90%;
+    align-self: center;
+    padding:1rem;
+    background-color: rgb(2, 50, 75);
+    border-radius: 1rem;
+  }
+  
+  .progress {
+    width: 100%;
+    border: 0.1rem solid rgb(10, 10, 46);
+  }
+  .progress .progressbar {
+    height: 1.5rem;
+    background-color: rgb(10, 10, 46);
+    animation: fill-bar 3s ;
+  }
+  .html .progress .progressbar {
+    width: 95%;
+  }
+  .css .progress .progressbar {
+    width: 90%;
+  }
+  .javascript .progress .progressbar {
+    width: 86%;
+  }
+  .react .progress .progressbar {
+    width: 85%;
+  }
+  .node .progress .progressbar {
+    width: 80%;
+  }
+  .django .progress .progressbar {
+    width: 89%;
+  }
+  .python .progress .progressbar {
+    width: 94%;
+  }
+  .java .progress .progressbar {
+    width: 91%;
+  }
+  .cplusplus .progress .progressbar {
+    width: 84%;
+  }
+
+  @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: calc(95% * 15rem);}
+  }
+  .skill{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:2rem 1.5rem;
+    width: 20rem;
+    justify-content: space-between;
+    padding:2rem;
+    background-color: rgb(2, 63, 94);
+    border-radius: 1rem;
+    
+  }
+  .skill_n{
+    display: flex;
+    justify-content: space-between;
+  }
+  @media only screen and (max-width : 460px) {
+    .skills-container .myskills{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .skill{
+      margin:1rem;
+      width: 100%;
+    }
+ }
+  
+  
