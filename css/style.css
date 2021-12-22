@@ -24,6 +24,7 @@ body {
     display: grid;
     grid-template-rows: [header]60px [main]100% [footer]60px;
     background-color: rgb(0, 74, 111);
+    min-height:100vh;
 }
 
 img {
