@@ -45,6 +45,9 @@
         width:auto;
         margin:0;
       }
+      #about-container{
+        margin:0.5rem;
+       }
       #about-container__more_aboutme{
         flex-wrap: nowrap;
         margin: 0;
