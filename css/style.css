@@ -144,6 +144,9 @@ img {
     .mobile_menu {
         display: block;
     }
+    #welcome{
+        width:100%;
+    }
     .home-content {
         flex-direction: column;
     }
