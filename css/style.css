@@ -235,18 +235,6 @@ a {
     background-color: #02450f;
 }
 
-footer .foot1 {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
-
-.foot1 .footer__links p {
-    float: right;
-    width: 300px;
-    margin: 10px 10px;
-}
-
 .footer {
     grid-row: footer;
     display: flex;
