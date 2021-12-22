@@ -14,7 +14,7 @@
     background-color: rgb(0, 61, 92);
   }
   .contact-container__main-contact *{
-    margin: 0rem 1rem;
+    margin: 1rem 1rem;
   }
  .contact-container__main-contact--email{
     list-style: none;
