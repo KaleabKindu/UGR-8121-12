@@ -89,6 +89,7 @@
     }
     .skills-container__aboutskills{
      width:100%;
+     align-self: start;
      }
  }
   
