@@ -58,7 +58,7 @@ img {
     margin-left: 2rem;
 }
 
-.navbar .logo {
+.navbar .logo h1{
     font-size: 1rem;
     font-family: Courgette;
     font-weight: bold;
