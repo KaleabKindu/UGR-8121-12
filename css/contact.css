@@ -86,7 +86,7 @@ input[type=submit]:hover{
            flex-direction: column;
         }
         .contact-container__main-contact{
-         padding:0rem;
+         padding:0.5rem;
          }
   
   
