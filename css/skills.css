@@ -2,7 +2,7 @@
 .skills-container{
   display: flex;
   flex-direction: column;
-    margin:3rem 3rem 3rem ;
+    margin:1rem 2rem 3rem ;
     color: white;
   }
  .skills-container__myskills{
