@@ -1,5 +1,5 @@
 
-const menuicon=document.querySelector('.hamburger_menu');
+const menuicon=document.querySelector('.nav-container__hamburger_menu');
 const mobile_navbar=document.querySelector('.mobile_navbar')
  menuicon.addEventListener("click", () => {
      menuicon.classList.toggle("change");
@@ -9,7 +9,9 @@ const mobile_navbar=document.querySelector('.mobile_navbar')
      }
      else if (state.display == "block"){
         mobile_navbar.style.display="none";
+ 
      }
+     
  })
 
 
